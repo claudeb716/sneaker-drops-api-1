@@ -1,4 +1,4 @@
-package com.pluralsight.sneakerdrops.sneakerdrops.service;
+package com.pluralsight.sneakerdrops.service;
 
 import com.pluralsight.sneakerdrops.data.BrandRepository;
 import com.pluralsight.sneakerdrops.data.SneakerRepository;
@@ -23,14 +23,8 @@ public class SneakerService {
         this.brandRepository = brandRepository;
     }
 
-    public  long count(){
-    return sneakerRepository.count();
-    }
     public List<Sneaker> allSneakers(){
     return sneakerRepository.findAll();
-    }
-    public List<Brand> allBrands(){
-    return brandRepository.findAll();
     }
     public List<Sneaker> byModel(String model){
     return sneakerRepository.findByModelContaining(model);

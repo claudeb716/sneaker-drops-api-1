@@ -1,4 +1,4 @@
-package com.pluralsight.sneakerdrops.sneakerdrops.models;
+package com.pluralsight.sneakerdrops.models;
 
 import jakarta.persistence.*;
 
